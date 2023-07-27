@@ -17,11 +17,9 @@ class CarrotBot:
     def check_new_messages(self):
         self.new_message = False
         response = requests.get(self.url)
-        self.rp = json.loads(response.text)
         if response.status_code == 200:
             self.new_message = True
             data = json.loads(response.text)
-            # print(data)
             if data['message']['type'] == 'reply_user':
                 self.dialog_id = data['message']['conversation']
                 user_id = data['message']['from']
