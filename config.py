@@ -1,5 +1,5 @@
-TOKEN = "6104541305:AAGzHgLKbDC4jV8GUnzIIaHewFxmd5T0s2E"
-chanel_id = 355697052
+TOKEN = "6698842289:AAElTkez3QQZts0Jgx0y9dLS2Swg2y0ltSU"
+chanel_id = -903143607
 
 AppName = "alchosanpygmail1690390241"
 AppID = "57562"
