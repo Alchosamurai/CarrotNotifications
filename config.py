@@ -5,6 +5,6 @@ AppID = "57562"
 API_token = "app.57562.57741d683a51df380a83f2baffac81b0338c29a6cb7d5a50"
 
 sup_names ={
-    "Никита" : "@Nrock24"
+    "119775": "@Nrock24"  #Никита
 }
 

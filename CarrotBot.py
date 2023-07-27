@@ -23,12 +23,11 @@ class CarrotBot:
             if data['message']['type'] == 'reply_user':
                 self.dialog_id = data['message']['conversation']
                 user_id = data['message']['from']
-                user_url= f'https://api.carrotquest.io/users/{user_id}'
+                user_url = f'https://api.carrotquest.io/users/{user_id}'
                 user_json = json.loads(requests.get(user_url, headers=self.headers).text)
-                # print(user_json)
                 self.username = user_json["data"]['props']['$name']
                 try:
-                    sup = data['message']['assignee']['name']
+                    sup = data['message']['assignee']['id']
                     for name in config.sup_names:
                         if sup == name:
                             self.sup = config.sup_names.get(name)
