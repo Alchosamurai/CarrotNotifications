@@ -1,8 +1,8 @@
 from aiogram import Bot, types
 import config
-import asyncio
 
-class TelegramBot():
+
+class TelegramBot:
     def __init__(self):
         self.API_TOKEN = config.TOKEN
         self.channel_id = config.chanel_id

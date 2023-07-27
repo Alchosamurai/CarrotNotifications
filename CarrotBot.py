@@ -1,5 +1,3 @@
-import asyncio
-from aiogram import Bot, types
 import config
 import requests
 import json
