@@ -1,10 +1,14 @@
-TOKEN = "6698842289:AAElTkez3QQZts0Jgx0y9dLS2Swg2y0ltSU"
-chanel_id = -903143607
+import os
+from dotenv import load_dotenv
 
-AppID = "57562"
-API_token = "app.57562.57741d683a51df380a83f2baffac81b0338c29a6cb7d5a50"
+load_dotenv('keys.env')
+TOKEN = str(os.getenv('tg_token'))
+chanel_id = os.getenv('chat_id')
+
+AppID = os.getenv('app_id')
+API_token = os.getenv('app_token')
 
 sup_names ={
-    "119775": "@Nrock24"  #Никита
+    "119775": os.getenv('teg_N')
 }
 
