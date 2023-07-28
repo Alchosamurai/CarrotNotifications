@@ -13,9 +13,11 @@ class CarrotBot:
         self.new_message = False
         self.headers = {'Authorization': f'Token {config.API_token}'}
         self.username = ''
+        self.is_massage = False
 
     def check_new_messages(self):
         self.new_message = False
+        self.is_massage = False
         response = requests.get(self.url)
         if response.status_code == 200:
             self.new_message = True
@@ -31,6 +33,8 @@ class CarrotBot:
                     for name in config.sup_names:
                         if sup == name:
                             self.sup = config.sup_names.get(name)
+                            self.is_massage = True
                 except:
                     self.sup = None
+                    self.is_massage = True
 
